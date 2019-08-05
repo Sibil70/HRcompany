@@ -1,0 +1,40 @@
+$btn: #20A86B;
+$btn_red: #f31138;
+$text_color: #d8e1e6;
+$placeholder: #7a8f99;
+$border: #1C945D;
+$background: rgba(11, 23, 42, .95);
+$input_bg: rgba(245, 251, 250, .1);
+$input_border: #20A86B;
+$error: #E15433;
+$white: #ffffff;
+
+@mixin phones {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin narrow {
+  @media screen and (max-width: 1100px) {
+    @content;
+  }
+}
+
+@mixin widescreen {
+  @media screen and (max-width: 1800px) {
+    @content;
+  }
+}
+
+@mixin PhoneLandscape {
+  @media screen and (max-height: 500px) and (max-width: 900px) and (orientation:landscape) {
+    @content;
+  }
+}
