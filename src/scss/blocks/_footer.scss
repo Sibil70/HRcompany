@@ -1,0 +1,26 @@
+.footer {
+    background:$background-header-footer;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+}
+.footer__container{
+    padding-left: 180px;
+}
+.footer__links{
+    display: flex;
+}
+.footer__link{
+    margin-right: 80px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+.footer a {
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+text-decoration-line: underline;
+color:$textcolor;
+
+}

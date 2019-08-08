@@ -1,3 +1,9 @@
 @import 'mixins';
 @import './layout/normalize';
-@import './layout/base';
+@import './layout/_base';
+@import './layout/_container';
+@import './blocks/_header';
+@import './blocks/_main';
+@import './blocks/_footer';
+@import './blocks/_card';
+@import './blocks/_form';

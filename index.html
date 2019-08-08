@@ -1,13 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <title>HRCompany</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700,900&display=swap&subset=cyrillic"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1>HRCompany title!</h1>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <div class="header__logo">
+                        <a href="#" class="logo">
+                            <img src="./src/images/logo.svg" alt="Logo" class="logo__img">
+                        </a>
+                    </div>
+                    <div class="header__link">
+                        <a href="#" class="main-page">Главная</a>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <div class="container main__container">
+                    <div class="card">
+                        <div class="card__header">
+                            <span class="card__title">Вход</span>
+                        </div>
+                        <form action="#" class="form">
+                            <div class="form__row">
+                                <input type="text" class="form__input" placeholder="Логин">
+                            </div>
+                            <div class="form__row">
+                                <input type="password" class="form__input" placeholder="Пароль">
+                            </div>
+                            <div class="form__row">
+                                <button type="submit" class="form__button">Войти</button>
+                                <div class="password-recall">
+                                    <a href="#" class="password-recall__link">Забыли пароль?</a>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="registration">
+                            <a href="#" class="registration__link">Зарегистрироваться</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer class="footer">
+            <div class="container footer__container">
+                <ul class="footer__links">
+                    <li class="footer__link">
+                        <div class="contacts">
+                            <a href="#" class="contacts__link">Контакты</a>
+                        </div>
+                    </li>
+                    <li class="footer__link">
+                        <div class="terms-of-use">
+                            <a href="#" class="terms-of-use__link">Пользовательское соглашение</a>
+                        </div>
+                    </li>
+                    <li class="footer__link">
+                        <div class="help">
+                            <a href="#" class="help__link">Помощь</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>

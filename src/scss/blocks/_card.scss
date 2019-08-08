@@ -1,0 +1,19 @@
+.card{
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 635px;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 60px 50px 60px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.card__header{
+    font-size: 36px;
+line-height: 44px;
+margin-bottom: 60px;
+}

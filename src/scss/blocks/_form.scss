@@ -1,0 +1,44 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form__row{
+    width: 100%;
+    margin-bottom: 45px;
+}
+.form__input{
+    border-radius: 10px;
+    padding: 18px;
+    border: 1px solid $green;
+    width: 100%;
+    background: #F2F0F0;
+    font-size: 14px;
+    line-height: 17px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+.form__row:nth-child(2){
+    margin-bottom: 0;
+    margin-bottom: 95px;
+}
+.form__button{
+    background: #7D8754;
+    border-radius: 10px;
+    border: none;
+    font-size: 24px;
+    line-height: 29px;
+    width: 315px;
+    height: 48px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 10px;
+}
+.password-recall{
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: underline;
+}
+.password-recall a{
+    color: #0A8ED9;
+}
