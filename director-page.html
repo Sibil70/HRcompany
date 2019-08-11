@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HRCompany</title>
+    <title>HRCompany-Рекрутер</title>
     <link
         href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700,900&display=swap&subset=cyrillic"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/app.css">
 </head>
 
 <body>
@@ -22,35 +23,31 @@
                             <img src="./src/images/logo.svg" alt="Logo" class="logo__img">
                         </a>
                     </div>
-                    <div class="header__link">
-                        <a href="#" class="main-page">Главная</a>
-                    </div>
                 </div>
             </header>
-            <main class="main">
-                <div class="container main__container">
-                    <div class="card">
-                        <div class="card__header">
-                            <span class="card__title">Вход</span>
-                        </div>
-                        <form  id="login-form" class="form">
-                            <div class="form__row">
-                                <input type="text" class="form__input" name='login' placeholder="Логин">
-                            </div>
-                            <div class="form__row">
-                                <input type="password" class="form__input" name='password' placeholder="Пароль">
-                            </div>
-                            <div class="form__row">
-                                <button  class="form__button js-login-submit">Войти</button>
-                            </div>
-                        </form>
-                        <div class="password-recall">
-                            <a href="#" class="password-recall__link">Забыли пароль?</a>
-                        </div>
-                        <div class="to-registration">
-                            <a href="./registration.html" class="to-registration__link">Зарегистрироваться</a>
-                        </div>
-                    </div>
+            <main class="main app-main">
+                <div class="container app-container">
+                    <aside class="sidebar">
+                        <ul class="sidebar__list">
+                            <li class="sidebar__item sidebar__request"> 
+                                <span class="sidebar__text active">собеседования</span>
+                                <span class="sidebar__request-span">2</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <span class="sidebar__text">все заявки</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <span class="sidebar__text">новая заявка</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <span class="sidebar__text">список сотрудников</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <span class="sidebar__text">моя страница</span>
+                            </li>
+                        </ul>
+                    </aside>
+                    <div class="app-content">CONTENT-DIRECTOR</div>
                 </div>
             </main>
         </div>
@@ -76,7 +73,6 @@
             </nav>
         </footer>
     </div>
-    <script src="./src/login/login.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,79 @@
+@import 'mixins';
+
+.app-main{
+    background-image: none;
+    display: flex;
+}
+.app-container{
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+
+}
+.sidebar{
+    color: $sidebartext;
+    font-size: 24px;
+    line-height: 29px;
+    width: 20%;
+    flex-shrink: 0;
+    min-width: 280px;
+    margin-right: 15px;
+}
+.sidebar__item{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.sidebar__item:last-child{
+    margin-bottom: 0;
+}
+.sidebar__text {
+    height: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+.active{
+    height: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: $sidebaractive;
+}
+.sidebar__text {
+    transition: background-color .3s;
+}
+.sidebar__text:hover {
+    background-color: $sidebaractive;
+}
+.sidebar__request{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidebar__request-span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $newrequest;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $textcolor;
+}
+
+
+.sidebar__item span:first-letter{
+    text-transform: uppercase;
+}
+
+.app-content{
+    background: $white;
+    border: 1px solid #B5A9A9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 79%;
+    align-self: stretch;
+}
