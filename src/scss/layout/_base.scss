@@ -15,11 +15,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: $textcolor;
     width: 100%;
-    // overflow: hidden;
     overflow-x: hidden;
 }
 ul, li{
     list-style: none;
+    margin: 0;
 }
 textarea:focus, input:focus, select:focus{
     outline: none;

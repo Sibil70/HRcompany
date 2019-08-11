@@ -10,6 +10,10 @@
         href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700,900&display=swap&subset=cyrillic"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/registration.css">
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -35,7 +39,8 @@
                         </div>
                         <form action="#" class="form">
                             <div class="form__row">
-                                <input type="email" class="form__input form__input--email" placeholder="Адрес электронной почты">
+                                <input type="email" class="form__input form__input--email"
+                                    placeholder="Адрес электронной почты">
                             </div>
                             <div class="form__row">
                                 <input type="text" class="form__input" placeholder="ФИО">
@@ -47,11 +52,18 @@
                                 <input type="password" class="form__input" placeholder="Подтвердите пароль">
                             </div>
                             <div class="form__row">
-                                <select name="position" class="form__input form__input--select">
-                                    <option class="form__input form__input--select form__input--display-none" value="" disabled hidden selected>Должность</option>
-                                    <option class="form__input form__input--select" value="director">Директор</option>
-                                    <option class="form__input form__input--select" value="hr">Рекрутер</option>
-                                </select>
+
+
+                                <div class="dropdown">
+                                    <div class="select">
+                                        <span>Должность</span>
+                                    </div>
+                                    <input type="hidden" name="position">
+                                    <ul class="dropdown-menu">
+                                        <li id="hr">Рекрутер</li>
+                                        <li id="director">Директор</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="form__row">
                                 <button type="submit" class="form__button">Зарегистрироваться</button>
@@ -87,6 +99,8 @@
             </nav>
         </footer>
     </div>
+
+<script src="./src/js/dropdown.js"></script>
 </body>
 
 </html>
