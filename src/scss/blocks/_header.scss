@@ -13,4 +13,8 @@
     line-height: 29px;
     text-decoration-line: underline;
     color: $textcolor;
+    transition: opacity .5s;
+}
+.header__link a:hover{
+opacity: 0.7;
 }

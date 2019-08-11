@@ -21,6 +21,10 @@ body {
 ul, li{
     list-style: none;
 }
+textarea:focus, input:focus, select:focus{
+    outline: none;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;

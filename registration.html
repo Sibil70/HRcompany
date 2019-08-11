@@ -5,11 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HRCompany</title>
+    <title>HRCompany-Registration</title>
     <link
         href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700,900&display=swap&subset=cyrillic"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/registration.css">
 </head>
 
 <body>
@@ -31,24 +31,35 @@
                 <div class="container main__container">
                     <div class="card">
                         <div class="card__header">
-                            <span class="card__title">Вход</span>
+                            <span class="card__title">Регистрация</span>
                         </div>
                         <form action="#" class="form">
                             <div class="form__row">
-                                <input type="text" class="form__input" placeholder="Логин">
+                                <input type="email" class="form__input form__input--email" placeholder="Адрес электронной почты">
                             </div>
                             <div class="form__row">
-                                <input type="password" class="form__input" placeholder="Пароль">
+                                <input type="text" class="form__input" placeholder="ФИО">
                             </div>
                             <div class="form__row">
-                                <button type="submit" class="form__button">Войти</button>
+                                <input type="password" class="form__input form__input--password" placeholder="Пароль">
+                            </div>
+                            <div class="form__row">
+                                <input type="password" class="form__input" placeholder="Подтвердите пароль">
+                            </div>
+                            <div class="form__row">
+                                <select name="position" class="form__input form__input--select">
+                                    <option class="form__input form__input--select form__input--display-none" value="" disabled hidden selected>Должность</option>
+                                    <option class="form__input form__input--select" value="director">Директор</option>
+                                    <option class="form__input form__input--select" value="hr">Рекрутер</option>
+                                </select>
+                            </div>
+                            <div class="form__row">
+                                <button type="submit" class="form__button">Зарегистрироваться</button>
                             </div>
                         </form>
-                        <div class="password-recall">
-                            <a href="#" class="password-recall__link">Забыли пароль?</a>
-                        </div>
-                        <div class="to-registration">
-                            <a href="./registration.html" class="to-registration__link">Зарегистрироваться</a>
+                        <div class="have-acc">
+                            <span class="heve-acc-text">У вас уже есть аккаунт?</span>
+                            <a href="./index.html" class="heve-acc-link">Выполнить вход</a>
                         </div>
                     </div>
                 </div>

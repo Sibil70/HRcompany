@@ -1,0 +1,11 @@
+.to-registration {
+    font-size: 14px;
+    line-height: 17px;
+}
+.to-registration a {
+    color: $textcolor;
+    transition: all .5s;
+}
+.to-registration a:hover {
+    opacity: 0.5;
+}

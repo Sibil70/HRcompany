@@ -2,10 +2,15 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 10px;
 }
 .form__row{
     width: 100%;
     margin-bottom: 45px;
+}
+.form__row:last-child{
+    margin-top: 45px;
+    margin-bottom: 0;
 }
 .form__input{
     border-radius: 10px;
@@ -17,12 +22,32 @@
     line-height: 17px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
 }
-.form__row:nth-child(2){
-    margin-bottom: 0;
-    margin-bottom: 95px;
+
+.form__input--display-none{
+    display: none;
 }
+.form__input--select{
+    border-radius: 10px;
+    padding: 18px;
+    border: 1px solid $green;
+    width: 100%;
+    background: #F2F0F0;
+    font-size: 14px;
+    line-height: 17px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: url(../src/images/arrow.svg) 95% no-repeat;
+    cursor: pointer;
+}
+
+.form__input--select::-ms-expand { //for IE
+    display: none; 
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSdibGFjaycgaGVpZ2h0PScyNCcgdmlld0JveD0nMCAwIDI0IDI0JyB3aWR0aD0nMjQnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZD0nTTcgMTBsNSA1IDUtNXonLz48cGF0aCBkPSdNMCAwaDI0djI0SDB6JyBmaWxsPSdub25lJy8+PC9zdmc+);}
+
+
 .form__button{
-    background: #7D8754;
+    background: $green;
     border-radius: 10px;
     border: none;
     font-size: 24px;
@@ -31,14 +56,9 @@
     height: 48px;
     margin: 0 auto;
     display: block;
-    margin-bottom: 10px;
+    transition: opacity .5s;
+    cursor: pointer;
 }
-.password-recall{
-    text-align: center;
-    font-size: 14px;
-    line-height: 17px;
-    text-decoration-line: underline;
-}
-.password-recall a{
-    color: #0A8ED9;
+.form__button:hover{
+    opacity: 0.9;
 }
