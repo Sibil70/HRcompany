@@ -3,14 +3,55 @@
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
     width: 635px;
+    padding: 30px 60px;
+}
+.card__login{
     display: flex;
     flex-direction: column;
-    padding: 80px 60px 50px 60px;
     justify-content: center;
     align-items: center;
+}
+.card__registration{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card__registration-ok{
+    height: 605px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.card.registered{
+    padding:30px;
 }
 .card__header{
     font-size: 36px;
     line-height: 44px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    user-select: none;
+    &--bold{
+        font-size: 29px;
+        line-height: 37px;
+        font-weight: bold;
+    }
+}
+.card__text{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 78px;
+}
+.card__logo{
+    margin-bottom: 40px;
+}
+.card__back-link{
+    font-size: 14px;
+    line-height: 17px;
+    a {
+        color: $textcolor;
+    }
 }

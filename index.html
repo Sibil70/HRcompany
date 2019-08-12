@@ -30,25 +30,27 @@
             <main class="main">
                 <div class="container main__container">
                     <div class="card">
-                        <div class="card__header">
-                            <span class="card__title">Вход</span>
-                        </div>
-                        <form  id="login-form" class="form">
-                            <div class="form__row">
-                                <input type="text" class="form__input" name='login' placeholder="Логин">
+                        <div class="card__login">
+                            <div class="card__header">
+                                <span class="card__title">Вход</span>
                             </div>
-                            <div class="form__row">
-                                <input type="password" class="form__input" name='password' placeholder="Пароль">
+                            <form  id="login-form" class="form">
+                                <div class="form__row">
+                                    <input type="text" class="form__input" name='login' placeholder="Логин">
+                                </div>
+                                <div class="form__row">
+                                    <input type="password" class="form__input" name='password' placeholder="Пароль">
+                                </div>
+                                <div class="form__row">
+                                    <button  class="form__button js-login-submit">Войти</button>
+                                </div>
+                            </form>
+                            <div class="password-recall">
+                                <a href="#" class="password-recall__link">Забыли пароль?</a>
                             </div>
-                            <div class="form__row">
-                                <button  class="form__button js-login-submit">Войти</button>
+                            <div class="to-registration">
+                                <a href="./registration.html" class="to-registration__link">Зарегистрироваться</a>
                             </div>
-                        </form>
-                        <div class="password-recall">
-                            <a href="#" class="password-recall__link">Забыли пароль?</a>
-                        </div>
-                        <div class="to-registration">
-                            <a href="./registration.html" class="to-registration__link">Зарегистрироваться</a>
                         </div>
                     </div>
                 </div>

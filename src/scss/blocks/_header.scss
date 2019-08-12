@@ -3,6 +3,7 @@
     min-height: 80px;
     display: flex;
     align-items: center;
+    user-select: none;
 }
 .header__logo {
     margin-right: 50px;

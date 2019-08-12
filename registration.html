@@ -10,10 +10,8 @@
         href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700,900&display=swap&subset=cyrillic"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/registration.css">
-    <script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -34,44 +32,78 @@
             <main class="main">
                 <div class="container main__container">
                     <div class="card">
-                        <div class="card__header">
-                            <span class="card__title">Регистрация</span>
-                        </div>
-                        <form action="#" class="form">
-                            <div class="form__row">
-                                <input type="email" class="form__input form__input--email"
-                                    placeholder="Адрес электронной почты">
+                        <div class="card__registration">
+                            <div class="card__header">
+                                <span class="card__title">Регистрация</span>
                             </div>
-                            <div class="form__row">
-                                <input type="text" class="form__input" placeholder="ФИО">
-                            </div>
-                            <div class="form__row">
-                                <input type="password" class="form__input form__input--password" placeholder="Пароль">
-                            </div>
-                            <div class="form__row">
-                                <input type="password" class="form__input" placeholder="Подтвердите пароль">
-                            </div>
-                            <div class="form__row">
-
-
-                                <div class="dropdown">
-                                    <div class="select">
-                                        <span>Должность</span>
+                            <form action="#" class="form">
+                                <div class="form__row">
+                                    <input type="email" class="form__input form__input--email"
+                                        placeholder="Адрес электронной почты">
+                                    <div class="form__info js-form-info">
+                                        <span class="form__info-star">!</span>
+                                        <div class="form__popup js-registration-popup">
+                                            <p>
+                                                После регистрации ваша почта будет логином для входа в систему
+                                            </p>
+                                            <span class="form__popup-close js-close-popup"></span>
+                                        </div>
                                     </div>
-                                    <input type="hidden" name="position">
-                                    <ul class="dropdown-menu">
-                                        <li id="hr">Рекрутер</li>
-                                        <li id="director">Директор</li>
-                                    </ul>
                                 </div>
+                                <div class="form__row">
+                                    <input type="text" class="form__input" placeholder="ФИО">
+                                </div>
+                                <div class="form__row">
+                                    <input type="password" class="form__input form__input--password"
+                                        placeholder="Пароль">
+                                    <div class="form__info js-form-info">
+                                        <span class="form__info-circle">?</span>
+                                        <div class="form__popup js-registration-popup">
+                                            <p>
+                                                Длина пароля должна быть не менее 8 и не более 14 символов. Пароль
+                                                должен состоять из букв латинского алфавита (A-z), арабских цифр (0-9) и
+                                                специальных символов . , : ; ? ! * + % - <> @ [ ] { } / \ _ {} $ #
+                                            </p>
+                                            <span class="form__popup-close js-close-popup"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <input type="password" class="form__input" placeholder="Подтвердите пароль">
+                                </div>
+                                <div class="form__row">
+                                    <div class="dropdown">
+                                        <div class="select">
+                                            <span>Должность</span>
+                                        </div>
+                                        <input type="hidden" name="position">
+                                        <ul class="dropdown-menu">
+                                            <li id="hr">Рекрутер</li>
+                                            <li id="director">Директор</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <button type="submit" class="form__button">Зарегистрироваться</button>
+                                </div>
+                            </form>
+                            <div class="have-acc">
+                                <span class="heve-acc-text">У вас уже есть аккаунт?</span>
+                                <a href="./index.html" class="heve-acc-link">Выполнить вход</a>
                             </div>
-                            <div class="form__row">
-                                <button type="submit" class="form__button">Зарегистрироваться</button>
+                        </div>
+                        <div class="card__registration-ok">
+                            <div class="card__header card__header--bold">Вы успешно зарегистрированы!</div>
+                            <div class="card__text">После проверки данных, письмо будет отправленно Вам на почту,
+                                указанную при регистрации.</div>
+                            <div class="card__logo">
+                                <a href="#" class="logo">
+                                    <img src="./src/images/logo.svg" alt="Logo" class="logo__img">
+                                </a>
                             </div>
-                        </form>
-                        <div class="have-acc">
-                            <span class="heve-acc-text">У вас уже есть аккаунт?</span>
-                            <a href="./index.html" class="heve-acc-link">Выполнить вход</a>
+                            <div class="card__back-link">
+                                <a href="index.html">Назад на страницу авторизации</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -100,7 +132,22 @@
         </footer>
     </div>
 
-<script src="./src/js/dropdown.js"></script>
+    <script src="./src/js/dropdown.js"></script>
+    <script src="./src/js/popup.js"></script>
+
+    <script>
+        // потом добавить в авторизацию
+        let btn = document.querySelector('button'),
+            cardRegistrationBlock = document.querySelector('.card__registration'),
+            cardRegistrationOkBlock = document.querySelector('.card__registration-ok');
+
+        btn.addEventListener('click', (e)=>{
+            e.preventDefault();
+            cardRegistrationBlock.style.display = 'none';
+            cardRegistrationOkBlock.style.display = 'flex';
+            
+        })
+    </script>
 </body>
 
 </html>
