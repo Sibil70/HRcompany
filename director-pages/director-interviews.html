@@ -9,8 +9,8 @@
     <link
         href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700,900&display=swap&subset=cyrillic"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/app.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
                 <div class="container">
                     <div class="header__logo">
                         <a href="#" class="logo">
-                            <img src="./src/images/logo.svg" alt="Logo" class="logo__img">
+                            <img src="../src/images/logo.svg" alt="Logo" class="logo__img">
                         </a>
                     </div>
                 </div>
@@ -29,25 +29,44 @@
                 <div class="container app-container">
                     <aside class="sidebar">
                         <ul class="sidebar__list">
-                            <li class="sidebar__item sidebar__request"> 
-                                <span class="sidebar__text active">собеседования</span>
+                            <li class="sidebar__item sidebar__request">
+                                <a>
+                                    <span class="sidebar__text active">собеседования</span>
+                                </a>
                                 <span class="sidebar__request-span">2</span>
                             </li>
                             <li class="sidebar__item">
-                                <span class="sidebar__text">все заявки</span>
+                                <a href="./director-all_request.html">
+                                    <span class="sidebar__text">все заявки</span>
+                                </a>
                             </li>
                             <li class="sidebar__item">
-                                <span class="sidebar__text">новая заявка</span>
+                                <a href="./director-new_request.html">
+                                    <span class="sidebar__text ">новая заявка</span>
+                                </a>
                             </li>
                             <li class="sidebar__item">
-                                <span class="sidebar__text">список сотрудников</span>
+                                <a href="./director-workers.html">
+                                    <span class="sidebar__text">список сотрудников</span>
+                                </a>
                             </li>
                             <li class="sidebar__item">
-                                <span class="sidebar__text">моя страница</span>
+                                <a href="./director-my_page.html">
+                                    <span class="sidebar__text">моя страница</span>
+                                </a>
                             </li>
                         </ul>
                     </aside>
-                    <div class="app-content">CONTENT-DIRECTOR</div>
+                    <div class="app-content">
+                        <div class="my-page">
+                            <div class="info">
+                                <div class="name">Иванов Иван Иванович</div>
+                                <div class="photo-wrap">
+                                    <img src="../src/images/photo.svg" alt="photo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>

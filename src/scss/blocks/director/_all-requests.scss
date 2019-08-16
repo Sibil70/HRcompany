@@ -1,0 +1,56 @@
+.all-requests{
+    display: block;
+    padding: 15px 0;
+    overflow-y: auto; 
+    max-height: 970px;
+    font-size: 18px;
+    line-height: 22px;
+    color: $textcolor;
+
+    .request{
+        padding: 25px;
+        border-bottom: 2px solid $placeholder;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        transition: background-color .5s;
+        &:hover {
+            background-color: $background-header-footer;
+        }
+        &:first-child{
+            margin-top: -15px;
+        }
+    }
+
+    .row {
+        margin-bottom: 25px;;
+    }
+    .row--right{
+        align-self: flex-end;
+        margin-bottom: -70px;
+    }
+    .request-info{
+        margin-bottom: 10px;
+    }
+    .request-options{
+        display: flex;
+        justify-content: flex-end;
+        .delete-request{
+            width: 25px;
+            height: 25px;
+            background-image: url(../src/images/delete.svg);
+            background-repeat: no-repeat;
+            background-position: 100% 0%;
+            font-size: 0;
+            margin-right: 15px;
+        }
+        .edit-request{
+            width: 25px;
+            height: 25px;
+            background-image: url(../src/images/pencil.svg);
+            background-repeat: no-repeat;
+            background-position: 100% 0%;
+            font-size: 0;
+        }
+    }
+}

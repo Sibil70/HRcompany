@@ -9,8 +9,8 @@
     <link
         href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700,900&display=swap&subset=cyrillic"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/app.css">
 </head>
 
 <body>
@@ -20,7 +20,7 @@
                 <div class="container">
                     <div class="header__logo">
                         <a href="#" class="logo">
-                            <img src="./src/images/logo.svg" alt="Logo" class="logo__img">
+                            <img src="../src/images/logo.svg" alt="Logo" class="logo__img">
                         </a>
                     </div>
                 </div>
@@ -29,18 +29,26 @@
                 <div class="container app-container">
                     <aside class="sidebar">
                         <ul class="sidebar__list">
-                            <li class="sidebar__item sidebar__request"> 
-                                <span class="sidebar__text active">новые заявки</span>
+                            <li class="sidebar__item sidebar__request">
+                                <a href="./hr-requests.html" >
+                                <span class="sidebar__text ">новые заявки</span>
+                                </a>
                                 <span class="sidebar__request-span">2</span>
                             </li>
                             <li class="sidebar__item">
+                                    <a href="./hr-list.html">
                                 <span class="sidebar__text">список заявок</span>
+                                </a>
                             </li>
                             <li class="sidebar__item">
-                                <span class="sidebar__text">база данных</span>
+                                <a>
+                                <span class="sidebar__text active">база данных</span>
+                                </a>
                             </li>
                             <li class="sidebar__item">
-                                <span class="sidebar__text">моя страница</span>
+                                <a href="./hr-page.html">
+                                <span class="sidebar__text ">моя страница</span>
+                                </a>
                             </li>
                         </ul>
                     </aside>

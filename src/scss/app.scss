@@ -1,4 +1,7 @@
-@import 'mixins';
+@import '_mixins';
+@import './blocks/my-page/my-page';
+@import './blocks/director/request';
+@import './blocks/director/all-requests';
 
 .app-main{
     background-image: none;
@@ -20,6 +23,10 @@
     flex-shrink: 0;
     min-width: 280px;
     margin-right: 15px;
+    a{
+        color:$sidebartext;
+        text-decoration: none;
+    }
 }
 .sidebar__item{
     height: 40px;

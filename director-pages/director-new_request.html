@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HRCompany-Рекрутер</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700,900&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="container">
+                    <div class="header__logo">
+                        <a href="#" class="logo">
+                            <img src="../src/images/logo.svg" alt="Logo" class="logo__img">
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <main class="main app-main">
+                <div class="container app-container">
+                    <aside class="sidebar">
+                        <ul class="sidebar__list">
+                            <li class="sidebar__item sidebar__request">
+                                <a href="./director-interviews.html">
+                                    <span class="sidebar__text ">собеседования</span>
+                                </a>
+                                <span class="sidebar__request-span">2</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="./director-all_request.html">
+                                    <span class="sidebar__text">все заявки</span>
+                                </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a >
+                                    <span class="sidebar__text active">новая заявка</span>
+                                </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="./director-workers.html">
+                                    <span class="sidebar__text">список сотрудников</span>
+                                </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="./director-my_page.html">
+                                    <span class="sidebar__text">моя страница</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <div class="app-content">
+                        <div class="request">
+                            <div class="app-title">
+                                <span class="title">новая заявка</span>
+                            </div>
+                            <form class="form">
+                                <div class="form__row">
+                                    <input type="text" class="form__input" name='position' placeholder="Должность">
+                                </div>
+                                <div class="form__row">
+                                    <div class="dropdown">
+                                        <div class="select">
+                                            <span>График работы</span>
+                                        </div>
+                                        <input type="hidden" name="schedule">
+                                        <ul class="dropdown-menu">
+                                            <li id="five-days">5/2</li>
+                                            <li id="two-days">2/2</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form__row">
+                                    <input type="number" class="form__input" name='amount' placeholder="Колличество сотрудников" min="1" max="3">
+                                </div>
+                                <div class="form__row">
+                                    <textarea name="comment" class="form__input" maxlength="250" cols="30" rows="1" placeholder="Комментарий"></textarea>
+                                </div>
+                                
+                                <div class="form__row form__row--flex">
+                                    <button  type="reset" class="form__button">Отмена</button>
+                                    <button  class="form__button ">Отправить заявку</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <footer class="footer">
+            <nav class="container footer__container">
+                <ul class="footer__links">
+                    <li class="footer__link">
+                        <div class="contacts">
+                            <a href="#" class="contacts__link">Контакты</a>
+                        </div>
+                    </li>
+                    <li class="footer__link">
+                        <div class="terms-of-use">
+                            <a href="#" class="terms-of-use__link">Пользовательское соглашение</a>
+                        </div>
+                    </li>
+                    <li class="footer__link">
+                        <div class="help">
+                            <a href="#" class="help__link">Помощь</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+<script src="../src/js/dropdown.js"></script>
+</body>
+
+</html>

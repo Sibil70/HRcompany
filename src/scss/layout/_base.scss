@@ -38,4 +38,13 @@ flex-direction: column;
 .footer {
 flex: 0 0 auto;
 }
-
+.title {
+    font-size: 36px;
+    line-height: 44px;
+    user-select: none;
+    &--bold{
+        font-size: 29px;
+        line-height: 37px;
+        font-weight: bold;
+    }
+}

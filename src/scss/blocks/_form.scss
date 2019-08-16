@@ -14,6 +14,12 @@
     margin-bottom: 25px;
     position: relative;
 }
+.form__row--flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
 .form__row:last-child{
     margin-top: 35px;
     margin-bottom: 0;
@@ -81,6 +87,7 @@
     line-height: 17px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
     transition: box-shadow 0.3s;
+    resize: vertical; 
 }
 
 .form__input--display-none{
