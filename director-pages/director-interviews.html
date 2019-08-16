@@ -58,14 +58,83 @@
                         </ul>
                     </aside>
                     <div class="app-content">
-                        <div class="my-page">
-                            <div class="info">
-                                <div class="name">Иванов Иван Иванович</div>
-                                <div class="photo-wrap">
-                                    <img src="../src/images/photo.svg" alt="photo">
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="interviews">
+                            <li class="interview">
+                                <ul class="info-list">
+                                    <li class="info-item info-name">Абзалов Рахим Рахимович</li>
+                                    <li class="info-item info-age">Возраст: <span>29лет</span></li>
+                                    <li class="info-item info-citizenship">Гражданство: <span>Россия</span></li>
+                                    <li class="info-item info-phone">Телефон: <span>+79117564050</span></li>
+                                    <li class="info-item info-comment">Комментарий: <span></span></li>
+                                    <li class="info-item info-interview">Собеседование: <span>20,07,2019</span>| <span>14:00</span></li>
+                                    <li class="info-item info-position">Должность: <span>Охранник</span></li>
+                                    <li class="info-item info-schedule">График: <span>2/2</span></li>
+                                </ul>
+                                <button class="interview-result form__button">
+                                        Результат собеседования
+                                </button>
+                            </li>
+                            <li class="interview">
+                                <ul class="info-list">
+                                    <li class="info-item info-name">Абзалов Рахим Рахимович</li>
+                                    <li class="info-item info-age">Возраст: <span>29лет</span></li>
+                                    <li class="info-item info-citizenship">Гражданство: <span>Россия</span></li>
+                                    <li class="info-item info-phone">Телефон: <span>+79117564050</span></li>
+                                    <li class="info-item info-comment">Комментарий: <span></span></li>
+                                    <li class="info-item info-interview">Собеседование: <span>20,07,2019</span>| <span>14:00</span></li>
+                                    <li class="info-item info-position">Должность: <span>Охранник</span></li>
+                                    <li class="info-item info-schedule">График: <span>2/2</span></li>
+                                </ul>
+                                <button class="interview-result form__button">
+                                        Результат собеседования
+                                </button>
+                            </li>
+                            <li class="interview">
+                                <ul class="info-list">
+                                    <li class="info-item info-name">Абзалов Рахим Рахимович</li>
+                                    <li class="info-item info-age">Возраст: <span>29лет</span></li>
+                                    <li class="info-item info-citizenship">Гражданство: <span>Россия</span></li>
+                                    <li class="info-item info-phone">Телефон: <span>+79117564050</span></li>
+                                    <li class="info-item info-comment">Комментарий: <span></span></li>
+                                    <li class="info-item info-interview">Собеседование: <span>20,07,2019</span>| <span>14:00</span></li>
+                                    <li class="info-item info-position">Должность: <span>Охранник</span></li>
+                                    <li class="info-item info-schedule">График: <span>2/2</span></li>
+                                </ul>
+                                <button class="interview-result form__button">
+                                        Результат собеседования
+                                </button>
+                            </li>
+                            <li class="interview">
+                                <ul class="info-list">
+                                    <li class="info-item info-name">Абзалов Рахим Рахимович</li>
+                                    <li class="info-item info-age">Возраст: <span>29лет</span></li>
+                                    <li class="info-item info-citizenship">Гражданство: <span>Россия</span></li>
+                                    <li class="info-item info-phone">Телефон: <span>+79117564050</span></li>
+                                    <li class="info-item info-comment">Комментарий: <span></span></li>
+                                    <li class="info-item info-interview">Собеседование: <span>20,07,2019</span>| <span>14:00</span></li>
+                                    <li class="info-item info-position">Должность: <span>Охранник</span></li>
+                                    <li class="info-item info-schedule">График: <span>2/2</span></li>
+                                </ul>
+                                <button class="interview-result form__button">
+                                        Результат собеседования
+                                </button>
+                            </li>
+                            <li class="interview">
+                                <ul class="info-list">
+                                    <li class="info-item info-name">Абзалов Рахим Рахимович</li>
+                                    <li class="info-item info-age">Возраст: <span>29лет</span></li>
+                                    <li class="info-item info-citizenship">Гражданство: <span>Россия</span></li>
+                                    <li class="info-item info-phone">Телефон: <span>+79117564050</span></li>
+                                    <li class="info-item info-comment">Комментарий: <span></span></li>
+                                    <li class="info-item info-interview">Собеседование: <span>20,07,2019</span>| <span>14:00</span></li>
+                                    <li class="info-item info-position">Должность: <span>Охранник</span></li>
+                                    <li class="info-item info-schedule">График: <span>2/2</span></li>
+                                </ul>
+                                <button class="interview-result form__button">
+                                        Результат собеседования
+                                </button>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </main>
@@ -92,6 +161,33 @@
             </nav>
         </footer>
     </div>
+    <script src="../src/js/calcInterviews.js"></script>
+<script type="text/template">
+    <div class="popup-wrapper">
+            <div class="close-popup">
+                <span>Назад к списку интервью</span>
+            </div>
+            <form class="interview-result-form form">
+                <span class="form__title title">Результат собеседования</span>
+                <div class="form__row form__radio-btns">
+                    <input type="radio" required id="accept" name="result" class="form__radio-btn form__radio-btn_accept"> 
+                    <label for="accept" class="form__radio-fake">Принят</label> 
+                    <input type="radio" required id="not-accept" name="result" class="form__radio-btn form__radio-btn_not-accept"> 
+                    <label for="not-accept" class="form__radio-fake">Не принят</label> 
+                    <input type="radio" required id="other" name="result" class="form__radio-btn form__radio-btn_other"> 
+                    <label for="other"  class="form__radio-fake">Принят на других условиях</label>
+                </div>
+                <div class="form__row result-comment">
+                    <textarea class="form__input" name="result-comment" id="" cols="30" rows="10" required maxlength="250"></textarea>
+                    <p>Укажите причину отказа или любую иную полезную информацию, для улучшения качества подбора персонала</p>
+                </div>
+                <div class="form__row">
+                    <button class="form__button" type="submit">Отправить заявку в работу</button>
+                </div>
+            </form>
+            
+        </div>
+</script>
 </body>
 
 </html>

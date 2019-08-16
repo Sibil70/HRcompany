@@ -1,0 +1,32 @@
+.workers{
+    display: block;
+    padding: 15px 0;
+    overflow-y: auto; 
+    max-height: 750px;
+    font-size: 18px;
+    line-height: 22px;
+    color: $textcolor;
+
+    .worker{
+        padding: 25px;
+        border-bottom: 2px solid $placeholder;
+        display: flex;
+        flex-direction: column;
+        transition: background-color .5s;
+        &:first-child{
+            margin-top: -15px;
+        }
+    }
+    .info-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .info-item{
+        line-height: 1.5;
+    }
+    .info-item:first-child{
+        font-size: 22px;
+        line-height: 2;
+    }
+}

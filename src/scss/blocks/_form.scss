@@ -118,21 +118,22 @@
 }
 
 .form__button{
-    background: $green;
+    background: $sidebaractive;
     border-radius: 10px;
     border: none;
     font-size: 24px;
     line-height: 29px;
-    width: 315px;
+    padding: 0 10px;
+    width: fit-content;
     height: 48px;
     margin: 0 auto;
     display: block;
-    transition: opacity .5s;
+    transition: background-color .5s;
     cursor: pointer;
     user-select: none;
 }
 .form__button:hover{
-    opacity: 0.9;
+    background-color:$app-hover;
 }
 
 .dropdown {
@@ -204,4 +205,124 @@
 }
 .dropdown .dropdown-menu li:active {
     background-color: #e2e2e2
+}
+
+.form__title{
+    margin-bottom: 15px;
+}
+
+.form__radio-btns {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.form__radio-fake {
+    position: relative;
+    width: fit-content;
+    height: 45px;
+    display: block;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.form__radio-btn {
+    display: none;
+
+    &+.form__radio-fake:before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: $popupbackground;
+        border: 1px solid transparent;
+        position: absolute;
+        line-height: 45px;
+        text-align: center;
+        top: 0;left: 0;right: 0;bottom: 0;
+    }
+
+    &_accept {
+        &+.form__radio-fake:before {
+            content: "Принят";
+        }
+    }
+
+    &_not-accept {
+        &+.form__radio-fake:before {
+            content: "Не принят";
+        }
+    }
+
+    &_other {
+        &+.form__radio-fake:before {
+            content: "Принят на других условиях";
+        }
+    }
+
+    &_accept+.form__radio-fake:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-right: 1px solid $app-hover;
+        position: absolute;
+        top: 0;left: 0;right: 0;bottom: 0;
+    }
+
+    &_not-accept+.form__radio-fake:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-right: 1px solid $app-hover;
+        position: absolute;
+        top: 0;left: 0;right: 0;bottom: 0;
+    }
+}
+.form__radio-btn_accept {
+    &+.form__radio-fake:before {
+        border-radius: 7px 0px 0px 7px
+    }
+}
+
+.form__radio-btn_other {
+    &+.form__radio-fake:before {
+        border-radius: 0px 7px 7px 0px
+    }
+}
+
+.form__radio-btn:checked {
+    &+.form__radio-fake:before {
+        z-index: 1;
+        background-color: $app-hover;
+        transition: background-color 0.3s;
+    }
+}
+
+.form__radio-btn_accept:checked {
+    &+.form__radio-fake:before {
+        border: 1px solid $app-hover;
+        border-radius: 7px 0px 0px 7px;
+    }
+
+    &+.form__radio-fake:after {
+        border-right: 1px solid $app-hover;
+    }
+}
+
+.form__radio-btn_not-accept:checked {
+    &+.form__radio-fake:before {
+        border: 1px solid $app-hover;
+    }
+
+    &+.form__radio-fake:after {
+        border-right: 2px solid $app-hover;
+    }
+}
+
+.form__radio-btn_other:checked {
+    &+.form__radio-fake:before {
+        border: 1px solid $app-hover;
+        border-radius: 0px 7px 7px 0px;
+    }
 }

@@ -74,4 +74,10 @@
     .dropdown .dropdown-menu li:active {
         background-color: #e2e2e2
     }
+    .form__button{
+        transition: background-color .3s;
+    }
+    .form__button:hover{
+        background-color: $app-hover;
+    }
 }

@@ -62,18 +62,18 @@
                     <div class="app-content">
                         <div class="request">
                             <div class="app-title">
-                                <span class="title">новая заявка</span>
+                                <span class="title">Новая заявка</span>
                             </div>
-                            <form class="form">
+                            <form class="form js-request-form">
                                 <div class="form__row">
-                                    <input type="text" class="form__input" name='position' placeholder="Должность">
+                                    <input type="text" class="form__input" name='position' placeholder="Должность" required>
                                 </div>
                                 <div class="form__row">
                                     <div class="dropdown">
                                         <div class="select">
                                             <span>График работы</span>
                                         </div>
-                                        <input type="hidden" name="schedule">
+                                        <input type="text" name="schedule" required style="display:none">
                                         <ul class="dropdown-menu">
                                             <li id="five-days">5/2</li>
                                             <li id="two-days">2/2</li>
@@ -81,15 +81,15 @@
                                     </div>
                                 </div>
                                 <div class="form__row">
-                                    <input type="number" class="form__input" name='amount' placeholder="Колличество сотрудников" min="1" max="3">
+                                    <input type="number" class="form__input" name='amount' placeholder="Колличество сотрудников" min="1" max="3" required>
                                 </div>
                                 <div class="form__row">
-                                    <textarea name="comment" class="form__input" maxlength="250" cols="30" rows="1" placeholder="Комментарий"></textarea>
+                                    <textarea name="comment" class="form__input" maxlength="250" cols="30" rows="1" placeholder="Комментарий" required></textarea>
                                 </div>
                                 
                                 <div class="form__row form__row--flex">
                                     <button  type="reset" class="form__button">Отмена</button>
-                                    <button  class="form__button ">Отправить заявку</button>
+                                    <button  class="form__button js-request-button">Отправить заявку</button>
                                 </div>
                             </form>
                         </div>

@@ -8,6 +8,7 @@ $sidebaractive: #D3D7CD;
 $newrequest: #D0DCA0;
 $popupbackground: #B0B0B0;
 $app-grey: #e7e7e7;
+$app-hover: #D5DCBA;
 
 
 $error: #E15433;
@@ -39,6 +40,12 @@ $white: #ffffff;
 
 @mixin PhoneLandscape {
   @media screen and (max-height: 500px) and (max-width: 900px) and (orientation:landscape) {
+    @content;
+  }
+}
+
+@mixin print {
+  @media print {
     @content;
   }
 }
