@@ -1,0 +1,15 @@
+.requests-table{
+    .table-head{
+        text-align: center;
+        &__list{
+            display: flex;
+            min-height: 45px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__item{
+            padding: 10px;
+            margin-right: 10px;
+        }
+    }
+}
