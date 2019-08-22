@@ -1,11 +1,16 @@
-let countInterviews = document.querySelector('.sidebar__request-span');
+let countSpan = document.querySelector('.sidebar__request-span');
 
-function calcInterviews() {
-    const interviewsArr = document.querySelectorAll('.interview');
-    countInterviews.textContent = interviewsArr.length;
-    if(countInterviews.textContent == 0) {
-        console.log('empty');
+function calcItems(item) {
+    const itemsArr = document.querySelectorAll(item);
+    countSpan.textContent = itemsArr.length;
+    if(countSpan.textContent == 0) {
+        countSpan.style.display = 'none';
     }
 };
 
-document.addEventListener("DOMContentLoaded", calcInterviews);
+
+if(window.location.href.includes('director')) {
+    document.addEventListener("DOMContentLoaded", calcItems('.interview'));
+} else if (window.location.href.includes('hr')) {
+    document.addEventListener("DOMContentLoaded", calcItems('.request'));
+}
