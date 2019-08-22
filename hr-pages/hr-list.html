@@ -30,29 +30,150 @@
                     <aside class="sidebar">
                         <ul class="sidebar__list">
                             <li class="sidebar__item sidebar__request">
-                                <a href="./hr-requests.html" >
-                                <span class="sidebar__text ">новые заявки</span>
+                                <a href="./hr-requests.html">
+                                    <span class="sidebar__text ">новые заявки</span>
                                 </a>
                                 <span class="sidebar__request-span">2</span>
                             </li>
                             <li class="sidebar__item">
-                                    <a>
-                                <span class="sidebar__text active">список заявок</span>
+                                <a>
+                                    <span class="sidebar__text active">список заявок</span>
                                 </a>
                             </li>
                             <li class="sidebar__item">
                                 <a href="./hr-base.html">
-                                <span class="sidebar__text ">база данных</span>
+                                    <span class="sidebar__text ">база данных</span>
                                 </a>
                             </li>
                             <li class="sidebar__item">
                                 <a href="./hr-page.html">
-                                <span class="sidebar__text ">моя страница</span>
+                                    <span class="sidebar__text ">моя страница</span>
+                                </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="../index.html">
+                                    <span class="sidebar__text ">выйти</span>
                                 </a>
                             </li>
                         </ul>
                     </aside>
-                    <div class="app-content">CONTENT-HR</div>
+                    <div class="app-content">
+                        <div class="requests-table requests-list">
+                            <div class="mobileTable">
+                                <table class="table" cellspacing="0" cellpadding="1" border="1">
+                                    <tr class="request-header">
+                                        <th>Дата и время поступления заявки</th>
+                                        <th>Должность</th>
+                                        <th>Граффик</th>
+                                        <th>Кол-во</th>
+                                        <th>Адрес объекта</th>
+                                        <th>Бренд</th>
+                                        <th>№ объекта</th>
+                                        <th>Метро</th>
+                                        <th>Интервал ставки</th>
+                                    </tr>
+                                    <tr class="request">
+                                        <td>15.09.2019 | 15:00</td>
+                                        <td>Грузчик</td>
+                                        <td>2/2</td>
+                                        <td>1</td>
+                                        <td>Кропоткина,1</td>
+                                        <td>Спар</td>
+                                        <td>3996</td>
+                                        <td>Петроградская</td>
+                                        <td>12-15т.р</td>
+                                    </tr>
+                                    <tr class="request">
+                                        <td>15.09.2019 | 15:00</td>
+                                        <td>Грузчик</td>
+                                        <td>2/2</td>
+                                        <td>1</td>
+                                        <td>Кропоткина,1</td>
+                                        <td>Спар</td>
+                                        <td>3996</td>
+                                        <td>Петроградская</td>
+                                        <td>12-15т.р</td>
+                                    </tr>
+                                    <tr class="request">
+                                        <td>15.09.2019 | 15:00</td>
+                                        <td>Грузчик</td>
+                                        <td>2/2</td>
+                                        <td>1</td>
+                                        <td>Кропоткина,1</td>
+                                        <td>Спар</td>
+                                        <td>3996</td>
+                                        <td>Петроградская</td>
+                                        <td>12-15т.р</td>
+                                    </tr>
+                                    <tr class="request">
+                                        <td>15.09.2019 | 15:00</td>
+                                        <td>Грузчик</td>
+                                        <td>2/2</td>
+                                        <td>1</td>
+                                        <td>Кропоткина,1</td>
+                                        <td>Спар</td>
+                                        <td>3996</td>
+                                        <td>Петроградская</td>
+                                        <td>12-15т.р</td>
+                                    </tr>
+                                    <tr class="request">
+                                        <td>15.09.2019 | 15:00</td>
+                                        <td>Грузчик</td>
+                                        <td>2/2</td>
+                                        <td>1</td>
+                                        <td>Кропоткина,1</td>
+                                        <td>Спар</td>
+                                        <td>3996</td>
+                                        <td>Петроградская</td>
+                                        <td>12-15т.р</td>
+                                    </tr>
+                                    <tr class="request">
+                                        <td>15.09.2019 | 15:00</td>
+                                        <td>Грузчик</td>
+                                        <td>2/2</td>
+                                        <td>1</td>
+                                        <td>Кропоткина,1</td>
+                                        <td>Спар</td>
+                                        <td>3996</td>
+                                        <td>Петроградская</td>
+                                        <td>12-15т.р</td>
+                                    </tr>                                    
+                                </table>
+                            </div>
+
+                            <!-- <header class="table-head">
+                                        <ul class="table-head__list">
+                                            <li class="table-head__item">Дата и время поступления заявки</li>
+                                            <li class="table-head__item">Должность</li>
+                                            <li class="table-head__item">Граффик</li>
+                                            <li class="table-head__item">Кол-во</li>
+                                            <li class="table-head__item">Адрес объекта</li>
+                                            <li class="table-head__item">Бренд</li>
+                                            <li class="table-head__item">№ объекта</li>
+                                            <li class="table-head__item">Метро</li>
+                                            <li class="table-head__item">Интервал ставки</li>
+                                        </ul>
+                                    </header>
+                                    <ul class="table-rows">
+                                        <li class="table-row">
+                                            <ul class="row-list">
+                                                <li class="rowlist__item">15.09.2019</li>
+                                                <li class="rowlist__item">Грузчик</li>
+                                                <li class="rowlist__item">2/2</li>
+                                                <li class="rowlist__item">1</li>
+                                                <li class="rowlist__item">Кропоткина,1</li>
+                                                <li class="rowlist__item">Спар</li>
+                                                <li class="rowlist__item">3996</li>
+                                                <li class="rowlist__item">Петроградская</li>
+                                                <li class="rowlist__item">12-15т.р</li>
+                                            </ul>
+                                        </li>
+                                        <li class="table-row"></li>
+                                        <li class="table-row"></li>
+         -->
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>

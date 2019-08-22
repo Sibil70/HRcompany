@@ -17,7 +17,21 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-
+    ::-webkit-scrollbar {
+        width: 12px;
+        background: #C4C4C4;
+        border-radius: 100px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        width: 8px;
+        background-color: $white;
+        border-radius: 100px;
+    }
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    
+    }
 }
 .sidebar{
     color: $sidebartext;
@@ -82,9 +96,12 @@
 
 .app-content{
     background: $white;
-    border: 1px solid #B5A9A9;
+    border: 1px solid $app-border;
     box-sizing: border-box;
     border-radius: 10px;
     width: 79%;
     align-self: stretch;
+    overflow: hidden;
+    max-height: 78vh;
+    overflow-y: auto;
 }
